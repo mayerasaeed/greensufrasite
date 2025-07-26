@@ -30,11 +30,7 @@ const Features = () => {
       title: "Chef-Shared Recipes",
       description: "Discover halal-certified recipes from trusted home chefs. Bookmark, rate, and plan meals with ease."
     },
-    {
-      icon: Bell,
-      title: "Essential Reminders",
-      description: "Set smart reminders for rent due, visa renewals, bill payments, or food expiry—never miss what matters."
-    }
+    
   ];
 
   return (

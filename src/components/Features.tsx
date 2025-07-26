@@ -33,8 +33,8 @@ const Features = () => {
     },
     {
       icon: Sparkles,
-      title: "Essential Reminders",
-      description: "Never miss rent, visa renewals, or utility bills again."
+      title: "Recipe Discovery & Creation",
+      description: "Find new recipes tailored to your taste, or easily add your own family favorites."
     }
   ];
 
