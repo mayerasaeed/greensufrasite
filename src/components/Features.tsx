@@ -8,33 +8,33 @@ const Features = () => {
   const features = [
     {
       icon: Calendar,
-      title: "Smart Meal Planning",
-      description: "AI-powered suggestions based on your preferences, dietary needs, and schedule."
+      title: "Halal Meal Planner",
+      description: "Plan balanced meals for your family with halal-friendly filters."
     },
     {
       icon: ShoppingCart,
-      title: "Auto Shopping Lists",
-      description: "Generate organized shopping lists automatically from your meal plans."
+      title: "Smart Grocery List",
+      description: "Auto-generate shopping lists from your weekly plans & pantry status."
     },
     {
       icon: Heart,
-      title: "Nutrition Tracking",
-      description: "Monitor your nutritional intake and achieve your health goals effortlessly."
+      title: "Pantry & Essentials Hub",
+      description: "Track household supplies and reduce food waste."
     },
     {
       icon: Clock,
-      title: "Time Saving",
-      description: "Save hours every week with pre-planned meals and efficient preparation."
+      title: "Eco & Budget Insights",
+      description: "Monitor spending and get eco-friendly tips."
     },
     {
       icon: Users,
-      title: "Family Friendly",
-      description: "Plan meals for the whole family with dietary preferences and restrictions."
+      title: "Chef-Shared Recipes",
+      description: "Explore culturally inspired recipes from trusted home chefs."
     },
     {
       icon: Sparkles,
-      title: "Recipe Discovery",
-      description: "Discover new recipes tailored to your taste and cooking skill level."
+      title: "Essential Reminders",
+      description: "Never miss rent, visa renewals, or utility bills again."
     }
   ];
 
@@ -42,9 +42,9 @@ const Features = () => {
     <section id="features" className="py-20 bg-gradient-to-b from-background to-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Everything You Need for Perfect Meals</h2>
+          <h2 className="text-4xl font-bold mb-4">What You Can Do with Green Sufra</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Our comprehensive platform makes meal planning simple, enjoyable, and sustainable for your lifestyle.
+            Green Sufra empowers you to live smarter and halal — from planning meals to managing groceries and reducing waste. Here's how we help simplify your home life.
           </p>
         </div>
 

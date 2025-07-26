@@ -10,18 +10,18 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                Plan Your
-                <span className="text-primary block">Perfect Meals</span>
-                Effortlessly
+                Cook Smart. Live Halal.
+                <span className="text-primary block">Shop Better.</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-lg">
-                Transform your kitchen into a sanctuary of healthy, delicious meals with our intelligent meal planning platform.
+                Green Sufra helps you plan halal meals, manage groceries, and simplify daily life—
+                all in one eco-conscious app.
               </p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="hero" size="lg" className="text-lg px-8 py-6">
-                Start Planning Today
+                Join the Waitlist
                 <ArrowRight className="h-5 w-5" />
               </Button>
               <Button variant="outline" size="lg" className="text-lg px-8 py-6">

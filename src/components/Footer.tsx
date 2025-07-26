@@ -48,7 +48,7 @@ const Footer = () => {
 
         <div className="border-t border-forest-foreground/20 mt-12 pt-8 text-center">
           <p className="text-forest-foreground/60">
-            © 2024 GreenSufra. All rights reserved. Made with 💚 for healthy living.
+            © 2025 Hayati. All rights reserved.
           </p>
         </div>
       </div>

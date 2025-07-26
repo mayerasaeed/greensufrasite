@@ -10,13 +10,19 @@ const Header = () => {
           <span className="text-2xl font-bold text-foreground">GreenSufra</span>
         </div>
         <nav className="hidden md:flex items-center gap-8">
+          <a href="/" className="text-muted-foreground hover:text-foreground transition-colors">
+            Home
+          </a>
           <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
             Features
           </a>
-          <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
+          <a href="/partnerships" className="text-muted-foreground hover:text-foreground transition-colors">
+            Partnerships
+          </a>
+          <a href="/about" className="text-muted-foreground hover:text-foreground transition-colors">
             About
           </a>
-          <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
+          <a href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
             Contact
           </a>
         </nav>
