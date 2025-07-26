@@ -28,8 +28,8 @@ const Contact = () => {
                     <div>
                       <Label className="text-base font-medium">Email:</Label>
                       <p className="text-muted-foreground">
-                        <a href="mailto:projecthayati1@gmail.com" className="hover:text-primary transition-colors underline">
-                          projecthayati1@gmail.com
+                        <a href="mailto:mayera@greensufra.com" className="hover:text-primary transition-colors underline">
+                          mayera@greensufra.com
                         </a>
                       </p>
                     </div>
