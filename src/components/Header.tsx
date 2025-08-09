@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Leaf } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Leaf, Menu } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -28,12 +29,46 @@ const Header = () => {
           </Link>
         </nav>
         <div className="flex items-center gap-3">
-          <Button variant="ghost" size="sm">
+          <Button variant="ghost" size="sm" className="hidden md:inline-flex">
             Sign In
           </Button>
-          <Button variant="hero" size="sm">
+          <Button variant="hero" size="sm" className="hidden md:inline-flex">
             Get Started
           </Button>
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="outline" size="icon" className="md:hidden">
+                <Menu className="h-6 w-6" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right">
+              <div className="grid gap-4 py-4">
+                <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Home
+                </Link>
+                <Link to="/features" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Features
+                </Link>
+                <Link to="/partnerships" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Partnerships
+                </Link>
+                <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors">
+                  About
+                </Link>
+                <Link to="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Contact
+                </Link>
+                <div className="flex flex-col gap-3 pt-4">
+                  <Button variant="ghost" size="sm">
+                    Sign In
+                  </Button>
+                  <Button variant="hero" size="sm">
+                    Get Started
+                  </Button>
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </header>

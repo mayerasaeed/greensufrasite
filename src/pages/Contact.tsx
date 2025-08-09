@@ -44,7 +44,7 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-
+2222222222
               <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8">
                 <form className="space-y-6">
                   <div>
