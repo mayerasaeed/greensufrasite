@@ -27,7 +27,7 @@ const CTA = () => {
               <ArrowRight className="h-5 w-5" />
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-6">
-              Schedule Demo
+              Demo Coming Soon
             </Button>
           </div>
 

@@ -18,30 +18,33 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Product</h3>
             <ul className="space-y-2 text-forest-foreground/80">
-              <li><a href="#" className="hover:text-forest-foreground transition-colors">Features</a></li>
-              <li><a href="#" className="hover:text-forest-foreground transition-colors">Pricing</a></li>
-              <li><a href="#" className="hover:text-forest-foreground transition-colors">Recipes</a></li>
-              <li><a href="#" className="hover:text-forest-foreground transition-colors">Nutrition</a></li>
+              <li>
+                <a href="/Features" className="hover:text-forest-foreground transition-colors">
+                  Features
+                </a>
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-semibold mb-4">Company</h3>
             <ul className="space-y-2 text-forest-foreground/80">
-              <li><a href="#" className="hover:text-forest-foreground transition-colors">About</a></li>
-              <li><a href="#" className="hover:text-forest-foreground transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-forest-foreground transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-forest-foreground transition-colors">Contact</a></li>
+              <li>
+                <a href="/About" className="hover:text-forest-foreground transition-colors">
+                  About
+                </a>
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-semibold mb-4">Support</h3>
             <ul className="space-y-2 text-forest-foreground/80">
-              <li><a href="#" className="hover:text-forest-foreground transition-colors">Help Center</a></li>
-              <li><a href="#" className="hover:text-forest-foreground transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-forest-foreground transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-forest-foreground transition-colors">Cookie Policy</a></li>
+              <li>
+                <a href="/contact" className="hover:text-forest-foreground transition-colors">
+                  Contact Us
+                </a>
+              </li>
             </ul>
           </div>
         </div>

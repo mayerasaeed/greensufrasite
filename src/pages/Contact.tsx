@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      
+
       <main className="py-20 bg-gradient-to-b from-background to-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -28,54 +28,83 @@ const Contact = () => {
                     <div>
                       <Label className="text-base font-medium">Email:</Label>
                       <p className="text-muted-foreground">
-                        <a href="mailto:mayera@greensufra.com" className="hover:text-primary transition-colors underline">
+                        <a
+                          href="mailto:mayera@greensufra.com"
+                          className="hover:text-primary transition-colors underline"
+                        >
                           mayera@greensufra.com
                         </a>
                       </p>
                     </div>
-                    <div>
-                      <Label className="text-base font-medium">Phone:</Label>
-                      <p className="text-muted-foreground">
-                        <a href="tel:+971501234567" className="hover:text-primary transition-colors underline">
-                          +971 50 123 4567
-                        </a>
-                      </p>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
-2222222222
+
               <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8">
-                <form className="space-y-6">
+                <form
+                  action="https://formspree.io/f/xgvzroyn"
+                  method="POST"
+                  className="space-y-6"
+                >
+                  {/* Honeypot to reduce spam */}
+                  <input
+                    type="text"
+                    name="_gotcha"
+                    className="hidden"
+                    tabIndex={-1}
+                    autoComplete="off"
+                  />
+                  {/* Optional subject line */}
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    value="New Contact Message - Green Sufra"
+                  />
+
                   <div>
-                    <Label htmlFor="name">Name</Label>
-                    <Input 
-                      id="name" 
-                      placeholder="Your name" 
+                    <Label htmlFor="name">
+                      <span className="text-red-500 mr-1">*</span>Name
+                    </Label>
+                    <Input
+                      id="name"
+                      name="name"
+                      placeholder="Your name"
                       className="mt-2"
+                      required
+                      autoComplete="name"
                     />
                   </div>
-                  
+
                   <div>
-                    <Label htmlFor="email">Email</Label>
-                    <Input 
-                      id="email" 
-                      type="email" 
-                      placeholder="you@example.com" 
+                    <Label htmlFor="email">
+                      <span className="text-red-500 mr-1">*</span>Email
+                    </Label>
+                    <Input
+                      id="email"
+                      name="email"
+                      type="email"
+                      placeholder="you@example.com"
                       className="mt-2"
+                      required
+                      autoComplete="email"
                     />
                   </div>
-                  
+
                   <div>
-                    <Label htmlFor="message">Message</Label>
-                    <Textarea 
-                      id="message" 
-                      placeholder="How can we help you?" 
+                    <Label htmlFor="message">
+                      <span className="text-red-500 mr-1">*</span>Message
+                    </Label>
+                    <Textarea
+                      id="message"
+                      name="message"
+                      placeholder="How can we help you?"
                       className="mt-2 min-h-[120px]"
+                      required
                     />
                   </div>
-                  
-                  <Button variant="hero" size="lg" className="w-full">
+
+                  <Button type="submit" variant="hero" size="lg" className="w-full">
                     Send Message
                   </Button>
                 </form>
@@ -84,7 +113,7 @@ const Contact = () => {
           </div>
         </div>
       </main>
-      
+
       <Footer />
     </div>
   );

@@ -29,12 +29,7 @@ const Header = () => {
           </Link>
         </nav>
         <div className="flex items-center gap-3">
-          <Button variant="ghost" size="sm" className="hidden md:inline-flex">
-            Sign In
-          </Button>
-          <Button variant="hero" size="sm" className="hidden md:inline-flex">
-            Get Started
-          </Button>
+          
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden">
@@ -59,12 +54,7 @@ const Header = () => {
                   Contact
                 </Link>
                 <div className="flex flex-col gap-3 pt-4">
-                  <Button variant="ghost" size="sm">
-                    Sign In
-                  </Button>
-                  <Button variant="hero" size="sm">
-                    Get Started
-                  </Button>
+                 
                 </div>
               </div>
             </SheetContent>

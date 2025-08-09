@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Partnerships from "./pages/Partnerships";
 import NotFound from "./pages/NotFound";
+import Waitlist from "./pages/waitlist";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/partnerships" element={<Partnerships />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="/waitlist" element={<Waitlist />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

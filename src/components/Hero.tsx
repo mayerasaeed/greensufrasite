@@ -10,33 +10,38 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                Cook Smart. Live Halal.
+                Cook Smart. Live Healthy.
                 <span className="text-primary block">Shop Better.</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-lg">
-                Green Sufra helps you plan halal meals, manage groceries, and simplify daily life—
+                Green Sufra helps you plan meals, manage groceries, and simplify daily life—
                 all in one eco-conscious app.
               </p>
             </div>
-            
+
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-6">
-                Join the Waitlist
-                <ArrowRight className="h-5 w-5" />
+              <Button asChild variant="hero" size="lg" className="text-lg px-8 py-6">
+                <a href="/waitlist" className="inline-flex items-center gap-2">
+                  Join the Waitlist
+                  <ArrowRight className="h-5 w-5" />
+                </a>
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6">
-                <Play className="h-5 w-5" />
-                Watch Demo
-              </Button>
+
+              <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
+  <a href="/contact" className="inline-flex items-center gap-2">
+    <Play className="h-5 w-5" />
+    Contact for Demo
+  </a>
+</Button>
             </div>
 
             <div className="flex items-center gap-8 pt-4">
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">10K+</div>
+                <div className="text-2xl font-bold text-primary">10+</div>
                 <div className="text-sm text-muted-foreground">Happy Users</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">50K+</div>
+                <div className="text-2xl font-bold text-primary">5</div>
                 <div className="text-sm text-muted-foreground">Meals Planned</div>
               </div>
               <div className="text-center">
@@ -48,20 +53,20 @@ const Hero = () => {
 
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src={heroFood} 
+              <img
+                src={heroFood}
                 alt="Fresh healthy ingredients for meal planning"
                 className="w-full h-[600px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-forest/20 to-transparent"></div>
             </div>
-            
+
             {/* Floating cards */}
             <div className="absolute -top-4 -left-4 bg-card p-4 rounded-xl shadow-lg border">
               <div className="text-sm font-medium text-card-foreground">Weekly Plan Ready!</div>
               <div className="text-xs text-muted-foreground">7 meals • 3 shopping lists</div>
             </div>
-            
+
             <div className="absolute -bottom-4 -right-4 bg-mint p-4 rounded-xl shadow-lg">
               <div className="text-sm font-medium text-mint-foreground">Calories Saved</div>
               <div className="text-2xl font-bold text-mint-foreground">1,200</div>
