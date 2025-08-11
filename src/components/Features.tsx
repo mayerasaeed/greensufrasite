@@ -8,7 +8,7 @@ const Features = () => {
   const features = [
     {
       icon: Calendar,
-      title: "Halal Meal Planner",
+      title: " Meal Planner",
       description: "Plan balanced meals for your family with halal-friendly filters."
     },
     {
