@@ -11,6 +11,9 @@ import Partnerships from "./pages/Partnerships";
 import NotFound from "./pages/NotFound";
 import Waitlist from "./pages/waitlist";
 
+// ✅ Only one legal page
+import PrivacyPolicy from "./pages/privacy-policy";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -25,8 +28,12 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/partnerships" element={<Partnerships />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="/waitlist" element={<Waitlist />} />
+          <Route path="/waitlist" element={<Waitlist />} />
+
+          {/* ✅ One combined legal page */}
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
+          {/* Catch-all 404 route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

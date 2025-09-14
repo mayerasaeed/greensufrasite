@@ -45,13 +45,19 @@ const Footer = () => {
                   Contact Us
                 </a>
               </li>
+              <li>
+                <a href="/privacy-policy" className="hover:text-forest-foreground transition-colors">
+                  Privacy Policy
+                </a>
+              </li>
+            
             </ul>
           </div>
         </div>
 
         <div className="border-t border-forest-foreground/20 mt-12 pt-8 text-center">
           <p className="text-forest-foreground/60">
-            © 2025 GreenSufra Powered By Mayzalan Digital. All rights reserved.
+            © 2025 GreenSufra Powered By Mayzalan FZE LLC . All rights reserved.
           </p>
         </div>
       </div>
