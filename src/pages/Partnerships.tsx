@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const Partnerships = () => {
   const partnershipTypes = [
     {
-      title: "Halal Brand Collaborations",
+      title: "Brand Collaborations",
       description: "Partner with halal-certified food, lifestyle, and kitchenware brands to reach a mindful audience aligned with your values."
     },
     {
