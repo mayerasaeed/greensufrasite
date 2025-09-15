@@ -1,4 +1,5 @@
 import { Leaf } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -8,7 +9,9 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Leaf className="h-8 w-8" />
-              <span className="text-2xl font-bold">GreenSufra</span>
+              <Link to="/" className="text-2xl font-bold hover:text-forest-foreground/80">
+                GreenSufra
+              </Link>
             </div>
             <p className="text-forest-foreground/80 max-w-xs">
               Making healthy meal planning simple, sustainable, and enjoyable for everyone.
@@ -19,9 +22,9 @@ const Footer = () => {
             <h3 className="font-semibold mb-4">Product</h3>
             <ul className="space-y-2 text-forest-foreground/80">
               <li>
-                <a href="/Features" className="hover:text-forest-foreground transition-colors">
+                <Link to="/features" className="hover:text-forest-foreground transition-colors">
                   Features
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -30,9 +33,9 @@ const Footer = () => {
             <h3 className="font-semibold mb-4">Company</h3>
             <ul className="space-y-2 text-forest-foreground/80">
               <li>
-                <a href="/About" className="hover:text-forest-foreground transition-colors">
+                <Link to="/about" className="hover:text-forest-foreground transition-colors">
                   About
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -41,23 +44,22 @@ const Footer = () => {
             <h3 className="font-semibold mb-4">Support</h3>
             <ul className="space-y-2 text-forest-foreground/80">
               <li>
-                <a href="/contact" className="hover:text-forest-foreground transition-colors">
+                <Link to="/contact" className="hover:text-forest-foreground transition-colors">
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/privacy-policy" className="hover:text-forest-foreground transition-colors">
-                  Privacy Policy
-                </a>
+                <Link to="/privacy-policy" className="hover:text-forest-foreground transition-colors">
+                  Privacy Policy & Terms
+                </Link>
               </li>
-            
             </ul>
           </div>
         </div>
 
         <div className="border-t border-forest-foreground/20 mt-12 pt-8 text-center">
           <p className="text-forest-foreground/60">
-            © 2025 GreenSufra Powered By Mayzalan FZE LLC . All rights reserved.
+            © 2025 GreenSufra Powered By Mayzalan FZE LLC. All rights reserved.
           </p>
         </div>
       </div>
