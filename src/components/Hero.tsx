@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroFood from "@/assets/hero-food.jpg";
 
 const Hero = () => {
@@ -20,19 +21,39 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
+              {/* Join Waitlist */}
               <Button asChild variant="hero" size="lg" className="text-lg px-8 py-6">
-                <a href="/waitlist" className="inline-flex items-center gap-2">
+                <Link to="/waitlist" className="inline-flex items-center gap-2" aria-label="Join the Waitlist">
                   Join the Waitlist
                   <ArrowRight className="h-5 w-5" />
+                </Link>
+              </Button>
+
+              {/* Contact for Demo (internal route) */}
+              <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
+                <Link to="/contact" className="inline-flex items-center gap-2" aria-label="Contact for Demo">
+                  <Play className="h-5 w-5" />
+                  Contact for Demo
+                </Link>
+              </Button>
+
+              {/*
+              // If your demo is a section on the same page instead:
+              <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
+                <a href="#demo" className="inline-flex items-center gap-2">
+                  <Play className="h-5 w-5" />
+                  See Demo
                 </a>
               </Button>
 
+              // Or if the demo is external:
               <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
-  <a href="/contact" className="inline-flex items-center gap-2">
-    <Play className="h-5 w-5" />
-    Contact for Demo
-  </a>
-</Button>
+                <a href="https://your-demo-url.example.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
+                  <Play className="h-5 w-5" />
+                  See Demo
+                </a>
+              </Button>
+              */}
             </div>
 
             <div className="flex items-center gap-8 pt-4">
@@ -58,7 +79,7 @@ const Hero = () => {
                 alt="Fresh healthy ingredients for meal planning"
                 className="w-full h-[600px] object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-forest/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-forest/20 to-transparent" />
             </div>
 
             {/* Floating cards */}
