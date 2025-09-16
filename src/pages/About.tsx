@@ -44,7 +44,7 @@ const About = () => {
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               We're a small but mighty team of food lovers, tech builders, and faith-driven 
               creatives from the UAE and beyond — on a mission to make meal planning 
-              smarter and more sustainable.
+              smarter and more sustainable and effortless.
             </p>
           </div>
         </div>
