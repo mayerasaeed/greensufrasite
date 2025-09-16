@@ -140,7 +140,7 @@ const LegalPage: React.FC = () => {
               Depending on your jurisdiction (including UAE PDPL and other applicable laws), you may have the right to access, correct, delete, restrict, or object to processing, and to data portability and consent withdrawal. You may also lodge a complaint with a supervisory authority.
             </p>
             <p>
-              To exercise rights, contact: <a href="mailto:privacy@greensufra.com">privacy@greensufra.com</a>.
+              To exercise rights, contact: <a href="mailto:mayera@greensufra.com">mayera@greensufra.com</a>.
             </p>
 
             <h2>Retention</h2>
@@ -176,8 +176,8 @@ const LegalPage: React.FC = () => {
 
             <h2>Contact</h2>
             <p>
-              Email: <a href="mailto:mayera@greensufra.com">privacy@greensufra.com</a><br />
-              Postal: Mayzalan FZE LLC, <em>[enter registered address]</em>
+              Email: <a href="mailto:mayera@greensufra.com">mayera@greensufra.com</a><br />
+              Postal: Mayzalan FZE LLC, <em></em>
             </p>
           </section>
         )}
@@ -278,7 +278,7 @@ const LegalPage: React.FC = () => {
 
             <h2>Contact</h2>
             <p>
-              Legal inquiries: <a href="mailto:mayera@greensufra.com">legal@greensufra.com</a><br />
+              Legal inquiries: <a href="mailto:mayera@greensufra.com">mayera@greensufra.com</a><br />
               Address: Mayzalan FZE LLC, <em></em>
             </p>
 
