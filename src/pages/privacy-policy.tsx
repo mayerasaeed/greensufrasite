@@ -177,7 +177,7 @@ const LegalPage: React.FC = () => {
             <h2>Contact</h2>
             <p>
               Email: <a href="mailto:mayera@greensufra.com">mayera@greensufra.com</a><br />
-              Postal: Mayzalan FZE LLC, <em></em>
+              Postal: Mayzalan FZE LLC,Business Center, SPC, Sharjah , UAE. <em></em>
             </p>
           </section>
         )}
